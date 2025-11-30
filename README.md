@@ -1,14 +1,14 @@
 ## Summary
 
-This program performs image convolution and blurring on images using manually implemented filtering operations. 
+This program performs image convolution and blurring on an image using filtering operations. 
 
-After loading an image in both color and grayscale, the code constructs a variety of filters including sharpening, Sobel edge detectors, a box blur, and a Gaussian kernel. A custom convolution function is used to slide each filter across the image and compute weighted sums of pixel neighborhoods. The main objective is to illustrate how convolution-based filtering works without relying on OpenCV’s built-in convolution functions. The provided altered images showcase convolution with varying kernel sizes and standard deviations.
+After loading an image in both color and grayscale, the code constructs a variety of filters including sharpening, Sobel edge detectors, a box blur, and a Gaussian kernel. A custom convolution function is used to slide each filter across the image and compute weighted sums of pixel neighborhoods. The main objective is to illustrate how convolution-based filtering works without relying on OpenCV’s built-in convolution functions.
 
 ## Methodology
 
 ### 1. Image Input
 
-- The program reads the starting demo image in both color and grayscale.
+- The program reads the starting demo image (blueparrot.jpg) in both color and grayscale.
 - The grayscale version is converted to float32 so convolution calculations remain accurate.
 
 ### 2. Filter Construction
@@ -40,7 +40,7 @@ This simulates how convolution works behind the scenes in real image-processing 
 
 ### 4. Blurring Process
 
-- A 25×25 Gaussian filter is generated (σ = 1.5).
+- A 25×25 Gaussian filter is generated with a standard deviation of 1.5 by default.
 - The code applies a box filter via the custom convolution function to blur the grayscale image.
 (Note: Even though the Gaussian filter is generated, the actual convolution uses the box filter.)
 
@@ -48,7 +48,7 @@ This simulates how convolution works behind the scenes in real image-processing 
 
 - The blurred image is scaled back to 8-bit integers (0–255).
 - Both original and blurred images are displayed with OpenCV.
-- The filtered result is saved with its kernel size attached in the file name
+- The result are already provided with filter size or standard deviation value attached to the file name.
 
 ## Conclusion
 
