@@ -1,6 +1,6 @@
 ## Summary
 
-This program performs image convolution and blurring on an image using manually implemented filtering operations. 
+This program performs image convolution and blurring on images using manually implemented filtering operations. 
 
 After loading an image in both color and grayscale, the code constructs a variety of filters including sharpening, Sobel edge detectors, a box blur, and a Gaussian kernel. A custom convolution function is used to slide each filter across the image and compute weighted sums of pixel neighborhoods. The main objective is to illustrate how convolution-based filtering works without relying on OpenCV’s built-in convolution functions. The provided altered images showcase convolution with varying kernel sizes and standard deviations.
 
