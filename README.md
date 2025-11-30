@@ -8,9 +8,8 @@ After loading an image in both color and grayscale, the code constructs a variet
 
 ### 1. Image Input
 
-The program reads the starting demo image in both color and grayscale.
-
-The grayscale version is converted to float32 so convolution calculations remain accurate.
+- The program reads the starting demo image in both color and grayscale.
+- The grayscale version is converted to float32 so convolution calculations remain accurate.
 
 ### 2. Filter Construction
 
@@ -23,7 +22,9 @@ Several filters are defined manually:
 
 -- A filter_size × filter_size matrix is created.
 -- Each element is calculated using the 2D Gaussian function:
+
 <img width="595" height="114" alt="image" src="https://github.com/user-attachments/assets/92528a70-cb34-4f6a-9ede-37bb931352d9" />
+
 --This produces a smooth, circularly symmetric kernel.
 
 ### 3. Manual Convolution Implementation
