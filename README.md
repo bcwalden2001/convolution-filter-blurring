@@ -18,14 +18,13 @@ Several filters are defined manually:
 - Custom sharpening filter
 - Sobel X and Sobel Y filters for edge detection
 - 5×5 box filter (each weight = 1/25)
-- Gaussian filter generator:
+- Gaussian filter generator
 
--- A filter_size × filter_size matrix is created.
--- Each element is calculated using the 2D Gaussian function:
+A filter_size × filter_size matrix is created and each element is calculated using this 2D Gaussian function:
 
-<img width="595" height="114" alt="image" src="https://github.com/user-attachments/assets/92528a70-cb34-4f6a-9ede-37bb931352d9" />
+<img width="297" height="57" alt="image" src="https://github.com/user-attachments/assets/92528a70-cb34-4f6a-9ede-37bb931352d9" />
 
---This produces a smooth, circularly symmetric kernel.
+This produces a smooth, circularly symmetric kernel.
 
 ### 3. Manual Convolution Implementation
 
