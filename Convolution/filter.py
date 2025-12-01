@@ -63,7 +63,7 @@ def convolve(image, filter):
 
 # Blurring the image using a gaussian filter
 gaussian_filter = get_gaussian_filter(25, 1.5)
-blur = convolve(filter_img, box_filter)
+blur = convolve(filter_img, gaussian_filter) 
 
 # Scaling pixel to the 0-255 range for displaying
 blur = (blur * 255).astype(np.uint8)
