@@ -40,9 +40,9 @@ This simulates how convolution works behind the scenes in real image-processing 
 
 ### 4. Blurring Process
 
-- A 25×25 Gaussian filter is generated with a standard deviation of 1.5 by default.
-- The code applies a box filter via the custom convolution function to blur the grayscale image.
-(Note: Even though the Gaussian filter is generated, the actual convolution uses the box filter.)
+- A Gaussian filter is generated given a filter size and standard deviation
+- The code applies the Gaussian filter via the custom convolution function to blur the grayscale image.
+(Note: the convolve function will work with all other filters)
 
 ### 5. Output Display
 
