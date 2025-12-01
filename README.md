@@ -2,7 +2,7 @@
 
 This program performs image convolution and blurring on an image using filtering operations. 
 
-After loading an image in both color and grayscale, the code constructs a variety of filters including sharpening, Sobel edge detectors, a box blur, and a Gaussian kernel. A custom convolution function is used to slide each filter across the image and compute weighted sums of pixel neighborhoods. The main objective is to illustrate how convolution-based filtering works without relying on OpenCV’s built-in convolution functions.
+This program performs image filtering using a custom filter, Sobel, box, and Gaussian by manually convolving a grayscale image, then displaying and saving the results as a new image.
 
 ## Methodology
 
@@ -13,14 +13,14 @@ After loading an image in both color and grayscale, the code constructs a variet
 
 ### 2. Filter Construction
 
-Several filters are defined manually:
+Several filters are defined:
 
 - Custom sharpening filter
 - Sobel X and Sobel Y filters for edge detection
 - 5×5 box filter (each weight = 1/25)
 - Gaussian filter generator
 
-A filter_size × filter_size matrix is created and each element is calculated using this 2D Gaussian function:
+A "filter_size × filter_size" matrix is created and each element is calculated using this 2D Gaussian function:
 
 <img width="297" height="57" alt="image" src="https://github.com/user-attachments/assets/92528a70-cb34-4f6a-9ede-37bb931352d9" />
 
@@ -28,7 +28,7 @@ This produces a smooth, circularly symmetric kernel.
 
 ### 3. Manual Convolution Implementation
 
-The convolve() function:
+The convolve function:
 
 - Creates an output image initialized to zeros.
 - For every pixel, it iterates through all filter weights.
@@ -47,11 +47,10 @@ This simulates how convolution works behind the scenes in real image-processing 
 ### 5. Output Display
 
 - The blurred image is scaled back to 8-bit integers (0–255).
-- Both original and blurred images are displayed with OpenCV.
-- The result are already provided with filter size or standard deviation value attached to the file name.
+- The results are already provided with indications ofthe filter size or standard deviation in the file name.
 
 ## Conclusion
 
 This program demonstrates the fundamental principles behind convolution and image blurring by manually implementing a filtering pipeline.
 
-Although OpenCV provides efficient built-in functions already, manual implementation deepens understanding of filter behavior and the mechanics of convolution and effectively replicates sharpening and blurring of raster images. 
+Although OpenCV provides efficient built-in functions already, manual implementation deepens understanding of filter behavior and the mechanics of convolution and effectively replicates sharpening and blurring filters of raster images. 
