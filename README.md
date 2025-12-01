@@ -53,4 +53,4 @@ This simulates how convolution works behind the scenes in real image-processing 
 
 This program demonstrates the fundamental principles behind convolution and image blurring by manually implementing a filtering pipeline.
 
-Although OpenCV provides efficient built-in functions already, manual implementation deepens understanding of filter behavior and the mechanics of convolution and effectively replicates sharpening and blurring filters of raster images. 
+Although OpenCV provides efficient built-in functions already, manual implementation deepens understanding of filter behavior and the mechanics of convolution and effectively replicates sharpenin, blurring, and edge detection of raster images. 
