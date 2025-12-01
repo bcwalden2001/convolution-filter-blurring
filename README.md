@@ -47,7 +47,7 @@ This simulates how convolution works behind the scenes in real image-processing 
 ### 5. Output Display
 
 - The blurred image is scaled back to 8-bit integers (0–255).
-- The results are already provided with indications ofthe filter size or standard deviation in the file name.
+- The results are displayed in a window using OpenCV
 
 ## Conclusion
 
