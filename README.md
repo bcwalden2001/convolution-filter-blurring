@@ -52,4 +52,6 @@ This simulates how convolution works behind the scenes in real image-processing 
 
 ## Conclusion
 
-This code demonstrates the fundamental principles behind convolution and image blurring by manually implementing a filtering pipeline. By constructing filters, computing the Gaussian kernel mathematically, and applying convolution pixel-by-pixel, the program highlights how image operations such as sharpening, edge detection, and smoothing are derived from weighted neighborhood calculations. Although OpenCV provides efficient built-in functions, manually coding the process deepens understanding of filter behavior and the mechanics of convolution.
+This program demonstrates the fundamental principles behind convolution and image blurring by manually implementing a filtering pipeline.
+
+Although OpenCV provides efficient built-in functions already, manual implementation deepens understanding of filter behavior and the mechanics of convolution and effectively replicates sharpening and blurring of raster images. 
